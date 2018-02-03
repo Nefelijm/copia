@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+	<link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" href="../css/main.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/jquery.cardify.css">
+	<title>Cardify | Uso</title>
+</head>
+
+<body>
+	<!-- Encabezado -->
+	<header>
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="../assets/images/cardify-icon.svg" width="30" height="30" class="d-inline-block align-top" alt="icon">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+			 aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Uso
+							<span class="sr-only">(current)</span>
+						</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <button id="btn-github" class="btn btn-outline-dark my-2 my-md-0">
+            <i class="fab fa-github"></i> Github</button>
+        </ul>
+      </div>
+		</nav>
+	</header>
+
+	<!-- Contenido de la pagina -->
+	<main>
+		<section>
+			<div class="container mt-4">
+				<div class="row">
+					<div class="col-12 col-md-10 offset-md-1">
+						<h2 class="first-title">Descarga</h2>
+						<a class="btn btn-cardify-outline" href="../assets/download/download-cardify.rar" download>
+							<i class="fas fa-download"></i> Descarga Cardify</a>
+					</div>
+				</div>
+		</section>
+
+		<section class="container mt-4">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					<h2 class="first-title">Instalación</h2>
+				</div>
+			</div>
+			<div class="row d-flex flex-row align-items-stretch">
+				<div class="col-12 col-md-10 offset-md-1 col-lg-5 p-3">
+					<div class="target bg-light p-3">
+						<h3 class="second-title">¿Que archivos se deben usar?</h3>
+						<div>
+							<p>Los archivos que hay que tener en cuenta son:</p>
+							<pre class="prettyprint text-center"><code>jquery.cardify.css</code></pre>
+							<pre class="prettyprint text-center"><code>jquery.cardify.js</code></pre>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-10 offset-md-1 col-lg-5 offset-lg-0 p-3">
+					<div class="target bg-light p-3">
+						<h3 class="second-title">¿Cómo incluir los archivos?</h3>
+						<div>
+							<p>Vincular CSS en
+								<code>head</code>:</p>
+							<pre class="prettyprint"><code>&lt;link rel="stylesheet" href="css/jquery.cardify.css"&gt;</code></pre>
+							<p>Incluir
+								<code>script</code> que vincule JS:</p>
+							<pre class="prettyprint"><code>&lt;script src="js/jquery.cardify.js"&gt;&lt;/script&gt;</code></pre>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-10 offset-md-1 p-3">
+					<div class="target bg-light p-3">
+						<h3 class="second-title">¿Como invocar Cardify?</h3>
+						<p>
+							<code>.example-container</code> es el contenedor donde se encuentran las imágenes a ser procesadas.</p>
+						<pre class="prettyprint"><code>$('.example-container').cardify();</code></pre>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer-bg pt-4 mt-4">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 text-center">
+					<p>© Cardify 2018</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="../js/jquery.cardify.js"></script>
+</body>
+
+</html>
